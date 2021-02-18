@@ -24,40 +24,40 @@ const AddMovie = (props) => {
 
   return (
     <div className="for">
-      <div class="container">
-        <div class=" text-center mt-5 ">
+      <div className="container">
+        <div className=" text-center mt-5 ">
           <h1>Add your best Movie</h1>
         </div>
-        <div class="row ">
-          <div class="col-lg-7 mx-auto">
-            <div class="card mt-2 mx-auto p-4 bg-light">
-              <div class="card-body bg-light">
-                <div class="container">
+        <div className="row ">
+          <div className="col-lg-7 mx-auto">
+            <div className="card mt-2 mx-auto p-4 bg-light">
+              <div className="card-body bg-light">
+                <div className="container">
                   <form id="contact-form" role="form">
-                    <div class="controls">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="form-group">
+                    <div className="controls">
+                      <div className="row">
+                        <div className="col-md-6">
+                          <div className="form-group">
                             <label for="form_name">Title</label>
                             <input
                               id="form_name"
                               type="text"
                               name="name"
-                              class="form-control"
+                              className="form-control"
                               placeholder="Please enter Movie Title "
                               value={title}
                               onChange={handleChangeTitle}
                             />
                           </div>
                         </div>
-                        <div class="col-md-6">
-                          <div class="form-group">
+                        <div className="col-md-6">
+                          <div className="form-group">
                             <label for="form_lastname">Description</label>
                             <input
                               id="form_lastname"
                               type="text"
                               name="surname"
-                              class="form-control"
+                              className="form-control"
                               placeholder="Please enter MovieDescription *"
                               value={description}
                               onChange={handleChangeDescription}
@@ -65,15 +65,15 @@ const AddMovie = (props) => {
                           </div>
                         </div>
                       </div>
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="form-group">
+                      <div className="row">
+                        <div className="col-md-6">
+                          <div className="form-group">
                             <label for="form_email">PostUrl</label>
                             <input
                               id="form_email"
                               type="text"
                               name="posturl"
-                              class="form-control"
+                              className="form-control"
                               placeholder="Please enter postUrl *"
                               value={postUrl}
                               onChange={handleChangePostUrl}
@@ -81,9 +81,9 @@ const AddMovie = (props) => {
                           </div>
                         </div>
                       </div>
-                      <div class="row">
-                        <div class="col-md-12">
-                          <div class="form-group">
+                      <div className="row">
+                        <div className="col-md-12">
+                          <div className="form-group">
                             <label for="form_message">Rate</label>
                             <ReactStars
                               count={5}
@@ -93,10 +93,10 @@ const AddMovie = (props) => {
                             />
                           </div>
                         </div>
-                        <div class="col-md-12">
+                        <div className="col-md-12">
                           <button
                             type="button"
-                            class="btn btn-outline-primary"
+                            className="btn btn-outline-primary"
                             onClick={(e) => {
                               e.preventDefault();
                               let t = title;

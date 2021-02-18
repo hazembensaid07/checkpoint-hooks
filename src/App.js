@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { Form } from "react-bootstrap";
-import ReactStars from "react-rating-stars-component";
+
 import "./App.css";
 
 import AddMovie from "./AddMovie/AddMovie";
