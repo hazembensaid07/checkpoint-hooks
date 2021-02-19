@@ -12,11 +12,11 @@ const MovieList = ({ moviesList, rate, title }) => {
         )
         .map((el) => (
           <MovieCard
+            key={el.objectID}
             title={el.title}
             desc={el.description}
             postUrl={el.postUrl}
             rate={el.rate}
-            key={el.objectID}
           />
         ))}
     </div>

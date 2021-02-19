@@ -38,7 +38,7 @@ const AddMovie = (props) => {
                       <div className="row">
                         <div className="col-md-6">
                           <div className="form-group">
-                            <label for="form_name">Title</label>
+                            <label htmlFor="form_name">Title</label>
                             <input
                               id="form_name"
                               type="text"
@@ -52,7 +52,7 @@ const AddMovie = (props) => {
                         </div>
                         <div className="col-md-6">
                           <div className="form-group">
-                            <label for="form_lastname">Description</label>
+                            <label htmlFor="form_lastname">Description</label>
                             <input
                               id="form_lastname"
                               type="text"
@@ -68,7 +68,7 @@ const AddMovie = (props) => {
                       <div className="row">
                         <div className="col-md-6">
                           <div className="form-group">
-                            <label for="form_email">PostUrl</label>
+                            <label htmlFor="form_email">PostUrl</label>
                             <input
                               id="form_email"
                               type="text"
@@ -84,7 +84,7 @@ const AddMovie = (props) => {
                       <div className="row">
                         <div className="col-md-12">
                           <div className="form-group">
-                            <label for="form_message">Rate</label>
+                            <label htmlFor="form_message">Rate</label>
                             <ReactStars
                               count={5}
                               onChange={handleRate}
