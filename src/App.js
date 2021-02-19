@@ -10,7 +10,13 @@ const App = () => {
   const [title, setTitle] = useState("");
   const [rate, setRate] = useState(0);
   const [moviesList, setMoviesList] = useState([
-    { title: "Matrix", Description: "horor", postUrl: "hhhh", rate: 2 },
+    {
+      id: Math.random(),
+      title: "Matrix",
+      Description: "horor",
+      postUrl: "hhhh",
+      rate: 2,
+    },
   ]);
   const addMovie = (movie) => setMoviesList([...moviesList, ...movie]);
 

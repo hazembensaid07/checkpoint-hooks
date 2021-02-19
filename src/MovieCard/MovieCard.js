@@ -13,7 +13,7 @@ function MovieCard({ title, desc, postUrl, rate }) {
             />
             <h1> {title} </h1>
             <h4>{postUrl}</h4>
-            <span className="minutes">117 min</span>
+            <span className="minutes">117</span>
             <p className="type">{rate}</p>
           </div>
           <div className="movie_desc">

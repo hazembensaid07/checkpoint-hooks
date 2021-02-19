@@ -11,13 +11,14 @@ const MovieList = ({ moviesList, rate, title }) => {
             el.title.toLowerCase().includes(title.toLowerCase())
         )
         .map((el) => (
-          <MovieCard
-            key={el.objectID}
-            title={el.title}
-            desc={el.description}
-            postUrl={el.postUrl}
-            rate={el.rate}
-          />
+          <div key={el.objectID}>
+            <MovieCard
+              title={el.title}
+              desc={el.description}
+              postUrl={el.postUrl}
+              rate={el.rate}
+            />
+          </div>
         ))}
     </div>
   );
